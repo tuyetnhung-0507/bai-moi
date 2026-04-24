@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <form action="" id="login" class="p-4">
+        <span class="close">&times;</span>
+        <div class="row text-center">
+            <h3>Đăng nhập</h3>
+        </div>
+
+        <label for="">Tài khảon</label>
+        <input type="text" style="width: 100%;">
+
+        <label for="">Password</label>
+        <input type="password" style="width: 100%;">
+        <div class="row text-center">
+            <div class="div">
+                <button style="width: 150px;">Đăng nhập</button>
+            </div>
+        </div>
+    </form>
+    <div id="cart-popup" class="p-4">
+        <span class="close-cart">×</span>
+        <h2 class="text-center mb-4">Giỏ hàng của bạn</h2>
+
+        <table class="table table-bordered align-middle">
+            <thead class="table-warning">
+                <tr>
+                    <th>STT</th>
+                    <th>ẢNH</th>
+                    <th>TÊN SẢN PHẨM</th>
+                    <th>ĐƠN GIÁ</th>
+                    <th>SỐ LƯỢNG</th>
+                    <th>THÀNH TIỀN</th>
+                    <th>THAO TÁC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="images/ĐC8.jpg" style="width: 50px;"></td>
+                    <td>SKULLPANDA</td>
+                    <td>800.000</td>
+                    <td>2</td>
+                    <td>1.600.000</td>
+                    <td><button class="btn btn-sm btn-danger">Xóa</button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="fw-bold">
+                    <td colspan="5" class="text-end">Tổng cộng:</td>
+                    <td colspan="2" class="text-danger">100.000.000.000 VND</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="text-center mt-3">
+            <button class="btn btn-success" id="btn-go-checkout" style="width: 200px;">Thanh toán ngay</button>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"><img src="logo.jpg" alt="" style="width: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tintuc.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="container mt-3">
+                <h2>Giỏ hàng</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>TT</th>
+                            <th>TÊN SẢN PHẨM</th>
+                            <th>HÌNH ẢNH</th>
+                            <th>ĐƠN GIÁ</th>
+                            <th>SỐ LƯỢNG</th>
+                            <th>THÀNH TIỀN</th>
+                            <th>THAO TÁC</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>SKULLPANDA</td>
+                            <td><img src="images/ĐC8.jpg" alt="" style="width: 100px;"></td>
+                            <td>800.000 VND</td>
+                            <td>20</td>
+                            <td>300.000.000 VND</td>
+                            <td><button class="btn btn-danger">Xoá</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>DIMOO</td>
+                            <td><img src="images/ĐC14.jpg" alt="" style="width: 100px;"></td>
+                            <td>999.000 VND</td>
+                            <td>32</td>
+                            <td>480.000.000 VND</td>
+                            <td><button class="btn btn-danger">Xoá</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MOLLY</td>
+                            <td><img src="images/ĐC22.jpg" alt="" style="width: 100px;"></td>
+                            <td>750.000 VND</td>
+                            <td>56</td>
+                            <td>840.000.000 VND</td>
+                            <td><button class="btn btn-danger">Xoá</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>SKULLPANDA</td>
+                            <td><img src="images/ĐC9.jpg" alt="" style="width: 100px;"></td>
+                            <td>1.000.000 VND</td>
+                            <td>63</td>
+                            <td>630.000.000 VND</td>
+                            <td><button class="btn btn-danger">Xoá</button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>DIMOO</td>
+                            <td><img src="images/ĐC16.webp" alt="" style="width: 100px;"></td>
+                            <td>783.000 VND</td>
+                            <td>12</td>
+                            <td>834.000.000 VND</td>
+                            <td><button class="btn btn-danger">Xoá</button></td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot class="table-info">
+                        <tr>
+                            <td colspan="3">Tổng thành tiền</td>
+                            <td colspan="3">100.000.000.000 VND</td>
+                            <td colspan="1"><button class="btn btn-primary" id="btn-cart-open">Thanh toán</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>SẢN PHẨM TƯƠNG TỰ</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ĐC23.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">MOLLY</h4>
+                            <p class="card-text">500.000 VND</p>
+                            <a href="chitiet.html" class="btn btn-primary">MUA NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ĐC20.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">DIMOO</h4>
+                            <p class="card-text">550.000 VND</p>
+                            <a href="chitiet.html" class="btn btn-primary">MUA NGAY</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ĐC15.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">SKULLPANDA</h4>
+                            <p class="card-text">650.000 VND</p>
+                            <a href="chitiet.html" class="btn btn-primary">MUA NGAY</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ĐC10.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">SKULLPANDA</h4>
+                            <p class="card-text">700.000 VND</p>
+                            <a href="chitiet.html" class="btn btn-primary">MUA NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ĐC18.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">DIMOO</h4>
+                            <p class="card-text">550.000 VND</p>
+                            <a href="chitiet.html" class="btn btn-primary">MUA NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ĐC21.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">MOLLY</h4>
+                            <p class="card-text">270.000 VND</p>
+                            <a href="chitiet.html" class="btn btn-primary">MUA NGAY</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ĐC29.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">MOLLY</h4>
+                            <p class="card-text">730.000 VND</p>
+                            <a href="chitiet.html" class="btn btn-primary">MUA NGAY</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ĐC7.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">SKULLPANDA</h4>
+                            <p class="card-text">800.000 VND</p>
+                            <a href="chitiet.html" class="btn btn-primary">MUA NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-primory text-light p-3">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>@ 2026 ArtToy</h3>
+                <p>Địa chỉ: TPHCM Việt Nam</p>
+                <p>0934553543 | arttoy@gmail.com</p>
+            </div>
+
+            <div class="col-md-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8777102141967!2d106.63146967592768!3d10.743907259790934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e794ceeb2e7%3A0x60feca181d4f1dd3!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEtpbmggdOG6vyBL4bu5IHRodeG6rXQgVHAuSENNIC0gdHJ1b25ndmlldG5hbS5jb20!5e0!3m2!1sen!2s!4v1773043082765!5m2!1sen!2s"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            // 1. Mặc định ẩn hết khi mới load trang
+            $("#login, #cart-popup").hide();
+
+            // 2. Xử lý Menu Danh mục
+            $(".frame-danhmuc > ul > li > ul").hide();
+            $(".frame-danhmuc > ul > li").click(function () {
+                $(this).children("ul").slideToggle();
+            });
+
+            // 3. ĐIỀU KHIỂN GIỎ HÀNG (POPUP)
+            // Khi bấm nút "Thanh toán" ở bảng giỏ hàng chính
+            $("#btn-cart-open").click(function () {
+                $("#cart-popup").fadeIn(300);
+            });
+
+            // Bấm dấu x để đóng bảng giỏ hàng
+            $(".close-cart").click(function () {
+                $("#cart-popup").fadeOut(300);
+            });
+
+            // 4. ĐIỀU KHIỂN ĐĂNG NHẬP
+            $("#btn-login").click(function () {
+                $("#login").fadeToggle();
+            });
+
+            $(".close").click(function () {
+                $("#login").hide();
+            });
+
+            // Xử lý nút Đăng nhập trong form
+            $("#login").submit(function (e) {
+                e.preventDefault();
+                // Lưu ý: Nhung cần thêm id="user" và id="password" vào thẻ <input> của form đăng nhập nữa nhé
+                let user = $("#user").val();
+                let pass = $("#password").val();
+
+                if (user === "nhung" && pass === "0507") {
+                    alert("Đăng nhập thành công!");
+                    $("#login").hide();
+                } else {
+                    alert("Sai tài khoản hoặc mật khẩu!");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

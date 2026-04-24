@@ -1,0 +1,364 @@
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+}
+
+/* 2. Header & Hotline Bar - Làm cho tinh tế hơn */
+header {
+    background-color: #f1f1f1; /* Nền xám rất nhẹ */
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.cch {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+/* 3. Thanh Menu (Navbar) - Khác biệt: Bo tròn và đổ bóng nhẹ */
+.navbar {
+    background-color: #ffffff !important;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-top: 20px;
+    padding: 10px 20px !important;
+}
+
+.navbar-brand img {
+    border-radius: 50%; /* Logo tròn */
+}
+
+.nav-link {
+    color: var(--text-main) !important;
+    font-weight: 600;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary-pink) !important; /* Hover sang màu hồng */
+    transform: translateY(-2px);
+}
+
+/* 4. Danh mục sản phẩm (Sidebar) - Khác biệt: Kiểu thẻ hiện đại */
+.frame-danhmuc {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.02);
+    margin-top: 30px;
+}
+
+.frame-danhmuc h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-main);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--primary-blue); /* Gạch chân xanh */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.frame-danhmuc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.frame-danhmuc > ul > li {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.frame-danhmuc > ul > li:hover {
+    background-color: var(--primary-yellow); /* Hover sang màu vàng */
+    color: #000;
+}
+
+/* 5. Banner Carousel - Đảm bảo hình ảnh đẹp và vừa vặn */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Chiều cao tối đa an toàn */
+    object-fit: cover; /* Cắt cúp ảnh đẹp */
+    border-radius: 15px;
+}
+
+/* 6. Section About - Khác biệt: Nền màu nhẹ */
+.about {
+    padding: 60px 0;
+}
+
+.about-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-img img {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 #F8BBD0; /* Bóng hồng phấn */
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* 7. Thẻ sản phẩm & NÚT BẤM - FIX LỖI TÀNG HÌNH */
+.card {
+    border: none;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    background-color: #fff; /* Đảm bảo nền card trắng */
+    border-radius: 8px; /* Bo góc nhẹ cho card */
+    overflow: hidden; /* Cắt ảnh thừa nếu bo góc */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Bóng nhẹ cho card */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 250px; /* Cố định chiều cao ảnh */
+    object-fit: contain; /* Giữ nguyên tỷ lệ ảnh, không bị mất hình */
+    padding: 15px; /* Tạo khoảng trống xung quanh ảnh */
+    background-color: #f9f9f9; /* Nền nhẹ cho phần ảnh */
+}
+
+.card-body {
+    padding: 15px; /* Khoảng cách bên trong card body */
+}
+
+.card-title {
+    font-weight: 700; /* Chữ đậm hơn cho tên sản phẩm */
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* FIX MÀU GIÁ TIỀN: Màu đỏ đậm/mồng gà */
+.card-text {
+    color: #a31a1a !important; /* Màu đỏ đô/mồng gà đậm */
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* FIX MÀU NÚT BẤM: Màu xanh dương đậm */
+.card .btn-primary {
+    background-color: #0d6efd !important; /* Màu xanh dương đậm của Bootstrap primary */
+    color: white !important;
+    border: none !important;
+    border-radius: 4px !important; /* Bo góc nhẹ cho nút */
+    padding: 8px 20px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase; /* Chữ in hoa cho nút */
+    font-size: 14px;
+    width: 100%; /* Nút dài hết card body */
+}
+
+.card .btn-primary:hover {
+    background-color: #0256d0 !important; /* Màu xanh đậm hơn khi hover */
+}
+
+/* 8. Tiêu đề mục (SẢN PHẨM BÁN CHẠY...) */
+.border-bottom h3 {
+    margin-top: 30px;
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.border-bottom h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-pink); /* Gạch chân hồng */
+}
+
+/* 9. Form Login (Popup) - Khác biệt: Bo tròn và màu pastel */
+#login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    background: #ffffff;
+    z-index: 1050;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    border: 2px solid var(--primary-blue); /* Viền xanh */
+}
+
+#login h3 {
+    color: var(--text-main);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+#login input {
+    margin-bottom: 18px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+}
+
+#login button {
+    background-color: var(--primary-pink); /* Nút hồng pastel */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-weight: 700;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: var(--text-light);
+}
+
+/* 10. Đánh giá khách hàng */
+.fr1 img {
+    width: 120px !important;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--primary-yellow); /* Viền vàng pastel */
+}
+
+/* 11. Footer */
+footer {
+    background-color: #2a2a2a !important; /* Xám đậm */
+    color: #e0e0e0 !important;
+    border-top: 10px solid var(--primary-blue); /* Viền xanh trên cùng */
+    margin-top: 60px;
+    padding: 50px 0 !important;
+}
+
+footer iframe {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.picture {
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#hienthi {
+    max-width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+/* Hàng chứa các ảnh nhỏ */
+.frame-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+
+/* Từng ô ảnh nhỏ */
+.frame-row {
+    display: flex !important;      /* Ép dùng Flexbox */
+    justify-content: center;      /* Căn giữa các ảnh nhỏ */
+    gap: 15px;                    /* Khoảng cách giữa các ảnh */
+    margin-top: 15px;
+    flex-wrap: nowrap;            /* Không cho phép tự ý xuống dòng */
+}
+
+/* 2. Định dạng từng ô ảnh nhỏ */
+.frame {
+    width: 70px !important;       /* Cố định chiều rộng */
+    height: 70px !important;      /* Cố định chiều cao (vuông) */
+    border: 2px solid #E1F5FE;    /* Viền xanh nhạt */
+    border-radius: 10px;          /* Bo góc cho đẹp */
+    overflow: hidden;             /* Cắt phần ảnh thừa */
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.3s;
+    display: flex;                /* Căn giữa ảnh bên trong ô */
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. Đảm bảo ảnh bên trong ô luôn vừa vặn, không bị méo */
+.frame img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;            /* Ảnh sẽ lấp đầy ô vuông mà không bị biến dạng */
+}
+
+/* 4. Hiệu ứng khi di chuột vào ảnh nhỏ */
+.frame:hover {
+    border-color: #F06292;        /* Đổi sang viền hồng */
+    transform: scale(1.1);        /* Phóng to nhẹ */
+}
+
+/* Định dạng nội dung mô tả bên phải */
+.col-md-4 h3 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.col-md-4 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.col-md-4 ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Phần giá tiền */
+h5[style*="color: red"] {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 20px 0;
+    color: #F06292 !important; /* Đổi màu đỏ sang hồng đậm cho hợp tông */
+}
+
+/* Khung Chi tiết sản phẩm & Mô tả (Phía dưới) */
+.mt-4.border.p-3 {
+    border-radius: 15px;
+    border: 1px solid #eee !important;
+    background-color: #fff;
+    line-height: 1.8;
+}
+
+.fw-bold {
+    color: #81D4FA; /* Màu xanh cho tiêu đề chi tiết */
+}
+
+/* Sản phẩm liên quan */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}

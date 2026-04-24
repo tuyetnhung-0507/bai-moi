@@ -1,0 +1,17 @@
+const products = [
+  { id: 1, tensp: "Queen of Hearts", hinh: "h1.jpg", mota: "Mô hình SKULLPANDA phong cách nữ hoàng trái tim, thiết kế độc đáo, màu sắc ấn tượng.", gia: "250000", danhmuc: "SKULLPANDA", dmtc: "spkm" },
+  { id: 2, tensp: "The Snow", hinh: "h2.jpg", mota: "SKULLPANDA phiên bản tuyết trắng tinh khôi, tạo hình dễ thương, thích hợp sưu tầm.", gia: "350000", danhmuc: "SKULLPANDA", dmtc: "spbc" },
+  { id: 3, tensp: "The Day Off", hinh: "h3.jpg", mota: "Mô hình SKULLPANDA ngày nghỉ thư giãn, phong cách đáng yêu, chi tiết tinh xảo.", gia: "200000", danhmuc: "SKULLPANDA", dmtc: "sphot" },
+  { id: 4, tensp: "Chirping", hinh: "h4.jpg", mota: "SKULLPANDA chủ đề chim hót vui nhộn, màu sắc tươi sáng, phù hợp trưng bày.", gia: "280000", danhmuc: "SKULLPANDA", dmtc: "spkm" },
+
+  { id: 5, tensp: "Propitious Jades", hinh: "h5.jpg", mota: "DIMOO ngọc cát tường mang ý nghĩa may mắn, thiết kế tinh tế, màu sắc hài hòa.", gia: "450000", danhmuc: "DIMOO", dmtc: "spbc" },
+  { id: 6, tensp: "Sprimg Brings", hinh: "h6.jpg", mota: "DIMOO mùa xuân tươi mới, tạo hình dễ thương, thích hợp làm quà tặng và sưu tập.", gia: "220000", danhmuc: "DIMOO", dmtc: "sphot" },
+  { id: 7, tensp: "Parting Clouds", hinh: "h7.jpg", mota: "DIMOO mây tan nhẹ nhàng, phong cách bay bổng, chi tiết tinh xảo, màu dịu mắt.", gia: "300000", danhmuc: "DIMOO", dmtc: "spkm" },
+  { id: 8, tensp: "Mega just DIMOO", hinh: "h8.jpg", mota: "DIMOO phiên bản lớn ấn tượng, thiết kế nổi bật, phù hợp trưng bày không gian.", gia: "400000", danhmuc: "DIMOO", dmtc: "spbc" },
+
+  { id: 9, tensp: "Molly đi học", hinh: "h9.jpg", mota: "MOLLY phiên bản đi học dễ thương, phong cách trẻ trung, thích hợp sưu tầm lâu dài.", gia: "180000", danhmuc: "MOLLY", dmtc: "sphot" },
+  { id: 10, tensp: "Molly", hinh: "h10.jpg", mota: "MOLLY cổ điển với thiết kế đáng yêu, màu sắc hài hòa, phù hợp trang trí góc nhỏ.", gia: "260000", danhmuc: "MOLLY", dmtc: "spkm" },
+  { id: 11, tensp: "Molly và mèo", hinh: "h11.jpg", mota: "MOLLY cùng mèo đáng yêu, tạo hình sinh động, chi tiết sắc nét, quà tặng ý nghĩa.", gia: "420000", danhmuc: "MOLLY", dmtc: "spbc" },
+  { id: 12, tensp: "Molly Cupid", hinh: "h12.jpg", mota: "MOLLY Cupid lãng mạn, phong cách dễ thương, thích hợp làm quà tặng dịp đặc biệt.", gia: "240000", danhmuc: "MOLLY", dmtc: "sphot" }
+];
+export default products;
