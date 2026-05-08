@@ -10,8 +10,8 @@ export default function Header() {
       <header>
         <div className="row frame-header">
           <div className="row">
+            <div className="col-md-4 cch text-center">ART TOY</div>
             <div className="col-md-4 cch text-center">HOTLINE: 0912345678</div>
-            <div className="col-md-4 cch text-center">Liên Hệ</div>
             <div className="col-md-4 cch text-center">
               <button className="btn btn-light" id="btn-login" type="button" onClick={() => setShowLogin(true)}>
                 Đăng nhập
