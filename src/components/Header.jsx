@@ -8,18 +8,61 @@ export default function Header() {
   return (
     <div>
       <header>
-        <div className="row frame-header">
-          <div className="row">
-            <div className="col-md-4 cch text-center">ART TOY</div>
-            <div className="col-md-4 cch text-center">HOTLINE: 0912345678</div>
-            <div className="col-md-4 cch text-center">
-              <button className="btn btn-light" id="btn-login" type="button" onClick={() => setShowLogin(true)}>
-                Đăng nhập
-              </button>
-            </div>
-          </div>
+  <div className="header-top-bar">
+    <div className="container d-flex justify-content-between align-items-center py-1">
+
+      {/* Bên trái */}
+      <div className="header-links-left d-flex align-items-center">
+        <span className="me-3">ART TOY - Thế giới đồ chơi nghệ thuật</span>
+
+        <div className="vr mx-2"></div>
+
+        <span className="me-3">
+          Hotline: 0912345678
+        </span>
+
+        <div className="vr mx-2"></div>
+
+        <span>
+          Kết nối
+          <i className="bi bi-facebook mx-1"></i>
+          <i className="bi bi-instagram"></i>
+        </span>
+      </div>
+
+      {/* Bên phải */}
+      <div className="header-links-right d-flex align-items-center">
+
+        <div className="header-item mx-2">
+          <i className="bi bi-bell"></i> Thông báo
         </div>
-      </header>
+
+        <div className="header-item mx-2">
+          <i className="bi bi-question-circle"></i> Hỗ trợ
+        </div>
+
+        <div className="header-item mx-2">
+          <i className="bi bi-globe"></i> Tiếng Việt <i className="bi bi-chevron-down"></i>
+        </div>
+
+        <div className="auth-buttons ms-3 d-flex align-items-center">
+          <span className="auth-link">Đăng Ký</span>
+
+          <div className="vr mx-2"></div>
+
+          <span
+            className="auth-link fw-bold"
+            style={{ cursor: "pointer" }}
+            onClick={() => setShowLogin(true)}
+          >
+            Đăng Nhập
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
       <div className="container">
         <div className="row">
           <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
