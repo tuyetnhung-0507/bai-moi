@@ -57,6 +57,8 @@ export default function Header() {
           >
             Đăng Nhập
           </span>
+          <div className="vr mx-2"></div>
+          <Link to="/khach-hang" className="nav-link">Khách Hàng</Link>
         </div>
 
       </div>

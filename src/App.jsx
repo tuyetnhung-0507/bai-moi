@@ -9,6 +9,7 @@ import Lienhe from "./pages/Lienhe";
 import Sanpham from "./pages/Sanpham";
 import Tintuc from "./pages/Tintuc";
 import Detail from "./pages/Detail";
+import KhachHang from "./components/KhachHang";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/lienhe" element={<Lienhe />} />
         <Route path="/tintuc" element={<Tintuc />} />
         <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/khach-hang" element={<KhachHang />} />
 
       </Routes>
 
