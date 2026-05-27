@@ -95,7 +95,7 @@ export function ShowSPH() {
                       Xem chi tiết
                   </Link>
                   <AddToCart product={sp}>
-                    <span className="d-flex align-items-center justify-content-center">
+                    <span className="d-flex align-items-center justify-content-center"> 
                       Thêm giỏ hàng
                     </span>
                   </AddToCart>
