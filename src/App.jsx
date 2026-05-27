@@ -10,6 +10,7 @@ import Sanpham from "./pages/Sanpham";
 import Tintuc from "./pages/Tintuc";
 import Detail from "./pages/Detail";
 import KhachHang from "./components/KhachHang";
+import Cart from "./pages/Cart";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/tintuc" element={<Tintuc />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/khach-hang" element={<KhachHang />} />
+        <Route path="/giohang" element={<Cart />} />
 
       </Routes>
 
