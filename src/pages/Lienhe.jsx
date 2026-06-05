@@ -310,13 +310,35 @@ export default function Lienhe() {
                         </button>
 
                         {submitted && (
-                            <div className="alert alert-success mt-3">
-                                Gửi liên hệ thành công!
-                                <p><strong>Họ tên:</strong> {form.fullname}</p>
-                                <p><strong>Địa chỉ:</strong> {form.address}</p>
-                                <p><strong>Số điện thoại:</strong> {form.phone}</p>
-                                <p><strong>Email:</strong> {form.email}</p>
-                                <p><strong>Nội dung:</strong> {form.message}</p>
+                            <div className="alert alert-success mt-3 rounded-4 shadow-sm border-0">
+                                <div className="d-flex align-items-center mb-2">
+                                    <span className="me-2 fs-4">🎉</span>
+                                    <h5 className="mb-0 fw-bold text-success">
+                                        Gửi liên hệ thành công!
+                                    </h5>
+                                </div>
+
+                                <p className="text-secondary mb-3">
+                                    Chúng tôi sẽ phản hồi sớm nhất có thể.
+                                </p>
+
+                                <div className="bg-white p-3 rounded-3 border">
+                                    <p className="mb-1">
+                                        <strong>👤 Họ tên:</strong> {form.fullname}
+                                    </p>
+                                    <p className="mb-1">
+                                        <strong>📍 Địa chỉ:</strong> {form.address}
+                                    </p>
+                                    <p className="mb-1">
+                                        <strong>📞 Số điện thoại:</strong> {form.phone}
+                                    </p>
+                                    <p className="mb-1">
+                                        <strong>✉️ Email:</strong> {form.email}
+                                    </p>
+                                    <p className="mb-0">
+                                        <strong>💬 Nội dung:</strong> {form.message}
+                                    </p>
+                                </div>
                             </div>
                         )}
                     </form>
